@@ -18,7 +18,12 @@ Ext.define('CarListings.view.MyPanel', {
     alias: 'widget.mypanel',
 
     requires: [
-        'CarListings.view.MyPanelViewModel'
+        'CarListings.view.MyPanelViewModel',
+        'Ext.grid.Panel',
+        'Ext.grid.column.Number',
+        'Ext.grid.column.Date',
+        'Ext.grid.column.Boolean',
+        'Ext.view.Table'
     ],
 
     viewModel: {
@@ -32,6 +37,35 @@ Ext.define('CarListings.view.MyPanel', {
     layout: {
         type: 'vbox',
         align: 'stretch'
-    }
+    },
+    items: [
+        {
+            xtype: 'gridpanel',
+            flex: 1,
+            title: 'My Grid Panel',
+            columns: [
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'string',
+                    text: 'String'
+                },
+                {
+                    xtype: 'numbercolumn',
+                    dataIndex: 'number',
+                    text: 'Number'
+                },
+                {
+                    xtype: 'datecolumn',
+                    dataIndex: 'date',
+                    text: 'Date'
+                },
+                {
+                    xtype: 'booleancolumn',
+                    dataIndex: 'bool',
+                    text: 'Boolean'
+                }
+            ]
+        }
+    ]
 
 });

@@ -32,5 +32,109 @@
     "name": "MyPanel",
     "designerId": "5bf9890d-ae6e-4565-b890-5f14046a2b78",
     "viewControllerInstanceId": "e2c5424d-2490-4a0c-bb69-a1e67bc2860b",
-    "viewModelInstanceId": "71ca0b4c-d13b-44e3-a061-c666a9dc0dd8"
+    "viewModelInstanceId": "71ca0b4c-d13b-44e3-a061-c666a9dc0dd8",
+    "cn": [
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "title": "My Grid Panel"
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "title": "string"
+            },
+            "name": "MyGridPanel",
+            "designerId": "f41229b3-e09f-4103-83d4-c2add75fc273",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "string",
+                        "text": "String"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyColumn",
+                    "designerId": "37b09e07-1d4e-4ba1-ac7d-b13517144ba1"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "number",
+                        "text": "Number"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "1a08df6a-8650-4efb-bba6-1f20f6a6621f"
+                },
+                {
+                    "type": "Ext.grid.column.Date",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "date",
+                        "text": "Date"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyDateColumn",
+                    "designerId": "8c0b2cd9-69fc-449b-a7a4-be596b3c9c00"
+                },
+                {
+                    "type": "Ext.grid.column.Boolean",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "bool",
+                        "text": "Boolean"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyBooleanColumn",
+                    "designerId": "4280c54a-b3a8-4271-b92c-7cf9d948cd93"
+                },
+                {
+                    "type": "Ext.view.Table",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "name": "MyTable",
+                    "designerId": "b0e75436-6021-4e5d-82b5-6699f3fbe7ba"
+                }
+            ]
+        }
+    ]
 }

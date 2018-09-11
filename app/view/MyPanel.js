@@ -24,6 +24,7 @@ Ext.define('CarListings.view.MyPanel', {
     viewModel: {
         type: 'mypanel'
     },
+    frame: true,
     height: 250,
     width: 400,
     title: 'Car Listing'

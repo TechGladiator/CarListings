@@ -14,5 +14,30 @@
  */
 
 Ext.define('CarListings.model.CarData', {
-    extend: 'Ext.data.Model'
+    extend: 'Ext.data.Model',
+
+    requires: [
+        'Ext.data.field.Field'
+    ],
+
+    fields: [
+        {
+            name: 'manufacturer'
+        },
+        {
+            name: 'model'
+        },
+        {
+            name: 'price'
+        },
+        {
+            name: 'wiki'
+        },
+        {
+            name: 'img'
+        },
+        {
+            name: 'quality'
+        }
+    ]
 });

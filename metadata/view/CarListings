@@ -12,7 +12,7 @@
         "designer|userAlias": "carlistings",
         "designer|userClassName": "CarListings",
         "frame": true,
-        "height": 250,
+        "height": 500,
         "layout": "vbox",
         "title": "Car Listing",
         "width": 400
@@ -171,6 +171,47 @@
                     "designerId": "65f3b18b-ddb4-4498-8e02-8bc0bb0044dd"
                 }
             ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "title": "My Panel"
+            },
+            "configAlternates": {
+                "layout|flex": "number",
+                "title": "string"
+            },
+            "name": "MyPanel1",
+            "designerId": "c35e902a-544d-4c44-a055-f88408667c50"
+        },
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "tpl",
+                "implHandler": [
+                    "`<img src=\"data/{img}\" style=\"float: right\" />",
+                    "Manufacturer: {manufacturer} ",
+                    "Model: <a href=\"{wiki}\" target=\"_blank\">{model}</a><br>",
+                    "Price: {price:usMoney}`"
+                ]
+            },
+            "configAlternates": {
+                "designer|displayName": "string",
+                "implHandler": "code"
+            },
+            "name": "tpl",
+            "designerId": "219165e5-9f6c-4d34-b261-d0299923e0cf"
         }
     ]
 }

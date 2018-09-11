@@ -10,6 +10,9 @@
             "CarData"
         ],
         "name": "CarListings",
+        "stores": [
+            "CarDataStore"
+        ],
         "views": [
             "CarListings"
         ]
@@ -17,6 +20,7 @@
     "configAlternates": {
         "name": "string",
         "models": "typedarray",
+        "stores": "typedarray",
         "views": "typedarray"
     },
     "name": "Application",

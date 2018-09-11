@@ -23,6 +23,9 @@ Ext.application({
     models: [
         'CarData'
     ],
+    stores: [
+        'CarDataStore'
+    ],
     views: [
         'CarListings'
     ],

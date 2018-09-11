@@ -26,6 +26,6 @@ Ext.define('CarListings.view.MyPanel', {
     },
     height: 250,
     width: 400,
-    title: 'My Panel'
+    title: 'Car Listing'
 
 });

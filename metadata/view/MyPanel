@@ -10,7 +10,7 @@
         "designer|userAlias": "mypanel",
         "designer|userClassName": "MyPanel",
         "height": 250,
-        "title": "My Panel",
+        "title": "Car Listing",
         "width": 400
     },
     "configAlternates": {

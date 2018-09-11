@@ -6,8 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "mypanel",
-        "designer|userClassName": "MyPanelViewController"
+        "designer|userAlias": "carlistings",
+        "designer|userClassName": "CarListingsViewController"
     },
     "configAlternates": {
         "designer|userAlias": "string",

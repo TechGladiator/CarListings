@@ -21,12 +21,12 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MyPanel'
+        'CarListings'
     ],
     name: 'CarListings',
 
     launch: function() {
-        Ext.create('CarListings.view.MyPanel', {renderTo: Ext.getBody()});
+        Ext.create('CarListings.view.CarListings', {renderTo: Ext.getBody()});
     }
 
 });

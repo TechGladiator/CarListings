@@ -8,7 +8,7 @@
     "userConfig": {
         "name": "CarListings",
         "views": [
-            "MyPanel"
+            "CarListings"
         ]
     },
     "configAlternates": {

@@ -20,10 +20,8 @@ Ext.define('CarListings.view.CarListings', {
     requires: [
         'CarListings.view.CarListingsViewModel',
         'Ext.grid.Panel',
-        'Ext.grid.column.Number',
-        'Ext.grid.column.Date',
-        'Ext.grid.column.Boolean',
-        'Ext.view.Table'
+        'Ext.view.Table',
+        'Ext.grid.column.Column'
     ],
 
     viewModel: {
@@ -42,26 +40,37 @@ Ext.define('CarListings.view.CarListings', {
         {
             xtype: 'gridpanel',
             flex: 1,
+            store: 'CarDataStore',
             columns: [
                 {
                     xtype: 'gridcolumn',
-                    dataIndex: 'string',
-                    text: 'String'
+                    dataIndex: 'manufacturer',
+                    text: 'Manufacturer'
                 },
                 {
-                    xtype: 'numbercolumn',
-                    dataIndex: 'number',
-                    text: 'Number'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'model',
+                    text: 'Model'
                 },
                 {
-                    xtype: 'datecolumn',
-                    dataIndex: 'date',
-                    text: 'Date'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'price',
+                    text: 'Price'
                 },
                 {
-                    xtype: 'booleancolumn',
-                    dataIndex: 'bool',
-                    text: 'Boolean'
+                    xtype: 'gridcolumn',
+                    dataIndex: 'wiki',
+                    text: 'Wiki'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'img',
+                    text: 'Img'
+                },
+                {
+                    xtype: 'gridcolumn',
+                    dataIndex: 'quality',
+                    text: 'Quality'
                 }
             ]
         }

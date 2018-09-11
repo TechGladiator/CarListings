@@ -27,6 +27,11 @@ Ext.define('CarListings.view.MyPanel', {
     frame: true,
     height: 250,
     width: 400,
-    title: 'Car Listing'
+    title: 'Car Listing',
+
+    layout: {
+        type: 'vbox',
+        align: 'stretch'
+    }
 
 });

@@ -6,22 +6,26 @@
     },
     "codeClass": null,
     "userConfig": {
+        "container|align": "stretch",
         "designer|initialView": true,
         "designer|uiInterfaceName": "default-framed",
         "designer|userAlias": "mypanel",
         "designer|userClassName": "MyPanel",
         "frame": true,
         "height": 250,
+        "layout": "vbox",
         "title": "Car Listing",
         "width": 400
     },
     "configAlternates": {
+        "container|align": "string",
         "designer|initialView": "boolean",
         "designer|uiInterfaceName": "string",
         "designer|userAlias": "string",
         "designer|userClassName": "string",
         "frame": "boolean",
         "height": "auto",
+        "layout": "string",
         "title": "string",
         "width": "auto"
     },

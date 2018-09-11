@@ -1,0 +1,28 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "mypanel",
+        "designer|userClassName": "MyPanel",
+        "height": 250,
+        "title": "My Panel",
+        "width": 400
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "MyPanel",
+    "designerId": "5bf9890d-ae6e-4565-b890-5f14046a2b78",
+    "viewControllerInstanceId": "e2c5424d-2490-4a0c-bb69-a1e67bc2860b",
+    "viewModelInstanceId": "71ca0b4c-d13b-44e3-a061-c666a9dc0dd8"
+}

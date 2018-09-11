@@ -6,10 +6,14 @@
     },
     "codeClass": null,
     "userConfig": {
-        "name": "CarListings"
+        "name": "CarListings",
+        "views": [
+            "MyPanel"
+        ]
     },
     "configAlternates": {
-        "name": "string"
+        "name": "string",
+        "views": "typedarray"
     },
     "name": "Application",
     "designerId": "application"

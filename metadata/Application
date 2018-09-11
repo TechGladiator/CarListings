@@ -6,6 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "CarData"
+        ],
         "name": "CarListings",
         "views": [
             "CarListings"
@@ -13,6 +16,7 @@
     },
     "configAlternates": {
         "name": "string",
+        "models": "typedarray",
         "views": "typedarray"
     },
     "name": "Application",

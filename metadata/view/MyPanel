@@ -42,12 +42,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": 1,
-                "title": "My Grid Panel"
+                "layout|flex": 1
             },
             "configAlternates": {
-                "layout|flex": "number",
-                "title": "string"
+                "layout|flex": "number"
             },
             "name": "MyGridPanel",
             "designerId": "f41229b3-e09f-4103-83d4-c2add75fc273",

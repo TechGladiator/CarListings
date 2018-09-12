@@ -1,4 +1,6 @@
 .architect
+app.json
+app.json.meta
 bootstrap.css
 bootstrap.js
 bootstrap.json
@@ -10,8 +12,11 @@ classic.jsonp
 ext/
 modern.json
 modern.jsonp
+packages/
 resources/sass/.sass-cache/
 resources/.arch-internal-preview.css
+sass/
+workspace.json
 .arch-internal-preview.css
 .architect
 .idea

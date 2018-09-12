@@ -32,12 +32,6 @@ Ext.define('CarListings.view.CarListings', {
     },
     frame: true,
     height: 500,
-    tpl: [
-        '`<img src="data/{img}" style="float: right" />',
-        'Manufacturer: {manufacturer} ',
-        'Model: <a href="{wiki}" target="_blank">{model}</a><br>',
-        'Price: {price:usMoney}`'
-    ],
     width: 400,
     title: 'Car Listing',
 
@@ -89,7 +83,13 @@ Ext.define('CarListings.view.CarListings', {
         {
             xtype: 'panel',
             flex: 1,
-            itemId: 'detailPanel'
+            itemId: 'detailPanel',
+            tpl: [
+                '`<img src="data/{img}" style="float: right" />',
+                'Manufacturer: {manufacturer} ',
+                'Model: <a href="{wiki}" target="_blank">{model}</a><br>',
+                'Price: {price:usMoney}`'
+            ]
         }
     ]
 

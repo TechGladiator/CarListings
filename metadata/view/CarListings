@@ -30,9 +30,9 @@
         "width": "auto"
     },
     "name": "MyPanel",
-    "designerId": "5bf9890d-ae6e-4565-b890-5f14046a2b78",
-    "viewControllerInstanceId": "e2c5424d-2490-4a0c-bb69-a1e67bc2860b",
-    "viewModelInstanceId": "71ca0b4c-d13b-44e3-a061-c666a9dc0dd8",
+    "designerId": "b1880f2b-7a00-456e-b080-1bbac9c2973b",
+    "viewControllerInstanceId": "54d52039-478b-4a13-9d1c-54967d883517",
+    "viewModelInstanceId": "240410bb-33db-42d8-8ed9-1086b4b473d3",
     "cn": [
         {
             "type": "Ext.grid.Panel",
@@ -50,7 +50,7 @@
                 "store": "store"
             },
             "name": "MyGridPanel",
-            "designerId": "f41229b3-e09f-4103-83d4-c2add75fc273",
+            "designerId": "e88fdd64-580c-4ea9-8eaf-ae8b518f61d7",
             "cn": [
                 {
                     "type": "Ext.view.Table",
@@ -60,7 +60,7 @@
                     },
                     "codeClass": null,
                     "name": "MyTable",
-                    "designerId": "b0e75436-6021-4e5d-82b5-6699f3fbe7ba"
+                    "designerId": "05bb26f6-627f-49ea-b494-7aabde78580f"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -78,7 +78,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn1",
-                    "designerId": "7cb51584-4a3b-4eea-b68d-09e7657d1a98"
+                    "designerId": "b67407d9-29fb-4ba1-92ab-8cc0e73b33cd"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -96,7 +96,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn2",
-                    "designerId": "5aabfc5c-9183-4f73-be77-ed272fa3b51b"
+                    "designerId": "ba50272b-659a-470d-b766-053a53efbb61"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -114,7 +114,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn3",
-                    "designerId": "3e5d8281-8d0f-4916-81de-f5f7ba6b5262"
+                    "designerId": "cb9a5626-0109-4141-8ee1-f71be6b8bae6"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -132,7 +132,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn4",
-                    "designerId": "0c669789-38ba-4450-af9c-c37e5bc6f344"
+                    "designerId": "9225c3c1-1533-4924-a209-db120affeac2"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -150,7 +150,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn5",
-                    "designerId": "f4b573d2-136e-4ef9-886b-3492be5a89a7"
+                    "designerId": "6b96cb3f-fb1d-4b60-aaea-e4eb496bb4fe"
                 },
                 {
                     "type": "Ext.grid.column.Column",
@@ -168,7 +168,7 @@
                         "text": "string"
                     },
                     "name": "MyColumn6",
-                    "designerId": "65f3b18b-ddb4-4498-8e02-8bc0bb0044dd"
+                    "designerId": "ae240447-1c7a-44e5-9705-cb80bb36ce3d"
                 },
                 {
                     "type": "viewcontrollereventbinding",
@@ -180,7 +180,7 @@
                     "userConfig": {
                         "fn": "onGridpanelSelect",
                         "implHandler": [
-                            "// grab a reference to the detailPanel via itemId",
+                            " // grab a reference to the detailPanel via itemId",
                             " // the # in front of the id indicates that we would like to grab a reference by",
                             " var detailPanel = Ext.ComponentQuery.query('#detailPanel')[0];",
                             " // update the detailPanel with data",
@@ -197,7 +197,7 @@
                         "scope": "string"
                     },
                     "name": "onGridpanelSelect",
-                    "designerId": "c9431410-d294-4c6f-911a-72c154138068"
+                    "designerId": "aa2a9e89-3d4a-4c01-93bb-694baeed9f39"
                 }
             ]
         },
@@ -216,31 +216,33 @@
                 "itemId": "string",
                 "layout|flex": "number"
             },
-            "name": "MyPanel1",
-            "designerId": "c35e902a-544d-4c44-a055-f88408667c50"
-        },
-        {
-            "type": "Ext.XTemplate",
-            "reference": {
-                "name": "tpl",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|displayName": "tpl",
-                "implHandler": [
-                    "`<img src=\"data/{img}\" style=\"float: right\" />",
-                    "Manufacturer: {manufacturer} ",
-                    "Model: <a href=\"{wiki}\" target=\"_blank\">{model}</a><br>",
-                    "Price: {price:usMoney}`"
-                ]
-            },
-            "configAlternates": {
-                "designer|displayName": "string",
-                "implHandler": "code"
-            },
-            "name": "tpl",
-            "designerId": "219165e5-9f6c-4d34-b261-d0299923e0cf"
+            "name": "MyPanel",
+            "designerId": "016693b2-a284-4d0d-aaa1-5c6cd3d3128b",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "tpl",
+                        "implHandler": [
+                            "`<img src=\"data/{img}\" style=\"float: right\" />",
+                            "Manufacturer: {manufacturer} ",
+                            "Model: <a href=\"{wiki}\" target=\"_blank\">{model}</a><br>",
+                            "Price: {price:usMoney}`"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|displayName": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "tpl",
+                    "designerId": "d77c98d7-9ec3-477f-b039-3a929089d6c9"
+                }
+            ]
         }
     ]
 }

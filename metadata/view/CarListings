@@ -169,6 +169,35 @@
                     },
                     "name": "MyColumn6",
                     "designerId": "65f3b18b-ddb4-4498-8e02-8bc0bb0044dd"
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridpanelSelect",
+                        "implHandler": [
+                            "// grab a reference to the detailPanel via itemId",
+                            " // the # in front of the id indicates that we would like to grab a reference by",
+                            " var detailPanel = Ext.ComponentQuery.query('#detailPanel')[0];",
+                            " // update the detailPanel with data",
+                            " // this will trigger the tpl to become updates",
+                            " detailPanel.update(record.data);"
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onGridpanelSelect",
+                    "designerId": "c9431410-d294-4c6f-911a-72c154138068"
                 }
             ]
         },
@@ -180,12 +209,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": 1,
-                "title": "My Panel"
+                "itemId": "detailPanel",
+                "layout|flex": 1
             },
             "configAlternates": {
-                "layout|flex": "number",
-                "title": "string"
+                "itemId": "string",
+                "layout|flex": "number"
             },
             "name": "MyPanel1",
             "designerId": "c35e902a-544d-4c44-a055-f88408667c50"

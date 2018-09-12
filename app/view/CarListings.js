@@ -19,12 +19,14 @@ Ext.define('CarListings.view.CarListings', {
 
     requires: [
         'CarListings.view.CarListingsViewModel',
+        'CarListings.view.CarListingsViewController',
         'Ext.grid.Panel',
         'Ext.view.Table',
         'Ext.grid.column.Column',
         'Ext.XTemplate'
     ],
 
+    controller: 'carlistings',
     viewModel: {
         type: 'carlistings'
     },
@@ -79,12 +81,15 @@ Ext.define('CarListings.view.CarListings', {
                     dataIndex: 'quality',
                     text: 'Quality'
                 }
-            ]
+            ],
+            listeners: {
+                select: 'onGridpanelSelect'
+            }
         },
         {
             xtype: 'panel',
             flex: 1,
-            title: 'My Panel'
+            itemId: 'detailPanel'
         }
     ]
 

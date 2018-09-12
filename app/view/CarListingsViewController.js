@@ -15,5 +15,15 @@
 
 Ext.define('CarListings.view.CarListingsViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.carlistings'
+    alias: 'controller.carlistings',
+
+    onGridpanelSelect: function(rowmodel, record, index, eOpts) {
+        // grab a reference to the detailPanel via itemId
+        // the # in front of the id indicates that we would like to grab a reference by
+        var detailPanel = Ext.ComponentQuery.query('#detailPanel')[0];
+        // update the detailPanel with data
+        // this will trigger the tpl to become updates
+        detailPanel.update(record.data);
+    }
+
 });

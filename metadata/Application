@@ -7,7 +7,8 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "CarData"
+            "CarData",
+            "CarChart"
         ],
         "name": "CarListings",
         "stores": [

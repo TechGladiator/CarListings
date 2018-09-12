@@ -14,5 +14,18 @@
  */
 
 Ext.define('CarListings.model.CarChart', {
-    extend: 'Ext.data.Model'
+    extend: 'Ext.data.Model',
+
+    requires: [
+        'Ext.data.field.Field'
+    ],
+
+    fields: [
+        {
+            name: 'name'
+        },
+        {
+            name: 'rating'
+        }
+    ]
 });

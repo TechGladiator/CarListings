@@ -36,7 +36,7 @@ Ext.define('CarListings.view.CarListings', {
     },
     frame: true,
     height: 750,
-    width: 800,
+    width: 874,
     title: 'Car Listing',
 
     layout: {
@@ -51,26 +51,31 @@ Ext.define('CarListings.view.CarListings', {
             columns: [
                 {
                     xtype: 'gridcolumn',
+                    width: 140,
                     dataIndex: 'manufacturer',
                     text: 'Manufacturer'
                 },
                 {
                     xtype: 'gridcolumn',
+                    width: 96,
                     dataIndex: 'model',
                     text: 'Model'
                 },
                 {
                     xtype: 'gridcolumn',
+                    width: 87,
                     dataIndex: 'price',
                     text: 'Price'
                 },
                 {
                     xtype: 'gridcolumn',
+                    width: 282,
                     dataIndex: 'wiki',
                     text: 'Wiki'
                 },
                 {
                     xtype: 'gridcolumn',
+                    width: 265,
                     dataIndex: 'img',
                     text: 'Img'
                 }

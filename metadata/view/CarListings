@@ -15,7 +15,7 @@
         "height": 750,
         "layout": "vbox",
         "title": "Car Listing",
-        "width": 800
+        "width": 874
     },
     "configAlternates": {
         "container|align": "string",
@@ -71,11 +71,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "manufacturer",
-                        "text": "Manufacturer"
+                        "text": "Manufacturer",
+                        "width": 140
                     },
                     "configAlternates": {
                         "dataIndex": "datafield",
-                        "text": "string"
+                        "text": "string",
+                        "width": "auto"
                     },
                     "name": "MyColumn1",
                     "designerId": "b67407d9-29fb-4ba1-92ab-8cc0e73b33cd"
@@ -89,11 +91,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "model",
-                        "text": "Model"
+                        "text": "Model",
+                        "width": 96
                     },
                     "configAlternates": {
                         "dataIndex": "datafield",
-                        "text": "string"
+                        "text": "string",
+                        "width": "auto"
                     },
                     "name": "MyColumn2",
                     "designerId": "ba50272b-659a-470d-b766-053a53efbb61"
@@ -107,11 +111,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "price",
-                        "text": "Price"
+                        "text": "Price",
+                        "width": 87
                     },
                     "configAlternates": {
                         "dataIndex": "datafield",
-                        "text": "string"
+                        "text": "string",
+                        "width": "auto"
                     },
                     "name": "MyColumn3",
                     "designerId": "cb9a5626-0109-4141-8ee1-f71be6b8bae6"
@@ -125,11 +131,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "wiki",
-                        "text": "Wiki"
+                        "text": "Wiki",
+                        "width": 282
                     },
                     "configAlternates": {
                         "dataIndex": "datafield",
-                        "text": "string"
+                        "text": "string",
+                        "width": "auto"
                     },
                     "name": "MyColumn4",
                     "designerId": "9225c3c1-1533-4924-a209-db120affeac2"
@@ -143,11 +151,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "dataIndex": "img",
-                        "text": "Img"
+                        "text": "Img",
+                        "width": 265
                     },
                     "configAlternates": {
                         "dataIndex": "datafield",
-                        "text": "string"
+                        "text": "string",
+                        "width": "auto"
                     },
                     "name": "MyColumn5",
                     "designerId": "6b96cb3f-fb1d-4b60-aaea-e4eb496bb4fe"

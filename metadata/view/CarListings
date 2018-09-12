@@ -12,10 +12,10 @@
         "designer|userAlias": "carlistings",
         "designer|userClassName": "CarListings",
         "frame": true,
-        "height": 500,
+        "height": 750,
         "layout": "vbox",
         "title": "Car Listing",
-        "width": 400
+        "width": 800
     },
     "configAlternates": {
         "container|align": "string",

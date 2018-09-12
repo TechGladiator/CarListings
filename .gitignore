@@ -6,6 +6,7 @@ bootstrap.js
 bootstrap.json
 bootstrap.jsonp
 build/
+build.settings
 build.xml
 classic.json
 classic.jsonp

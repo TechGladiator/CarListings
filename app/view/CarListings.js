@@ -73,11 +73,6 @@ Ext.define('CarListings.view.CarListings', {
                     xtype: 'gridcolumn',
                     dataIndex: 'img',
                     text: 'Img'
-                },
-                {
-                    xtype: 'gridcolumn',
-                    dataIndex: 'quality',
-                    text: 'Quality'
                 }
             ],
             listeners: {

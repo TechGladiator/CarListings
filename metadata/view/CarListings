@@ -153,24 +153,6 @@
                     "designerId": "6b96cb3f-fb1d-4b60-aaea-e4eb496bb4fe"
                 },
                 {
-                    "type": "Ext.grid.column.Column",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "dataIndex": "quality",
-                        "text": "Quality"
-                    },
-                    "configAlternates": {
-                        "dataIndex": "datafield",
-                        "text": "string"
-                    },
-                    "name": "MyColumn6",
-                    "designerId": "ae240447-1c7a-44e5-9705-cb80bb36ce3d"
-                },
-                {
                     "type": "viewcontrollereventbinding",
                     "reference": {
                         "name": "listeners",

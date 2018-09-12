@@ -12,7 +12,8 @@
         ],
         "name": "CarListings",
         "stores": [
-            "CarDataStore"
+            "CarDataStore",
+            "CarChartStore"
         ],
         "views": [
             "CarListings"

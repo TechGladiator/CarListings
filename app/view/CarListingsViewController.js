@@ -24,6 +24,14 @@ Ext.define('CarListings.view.CarListingsViewController', {
         // update the detailPanel with data
         // this will trigger the tpl to become updates
         detailPanel.update(record.data);
+
+        // grab a reference to the qualityChart, notice we use down here instead of child
+        // because down will go down the container hierarchy at any depth and child
+        // only retrieves direct children
+        var chart = Ext.ComponentQuery.query('#qualityChart')[0];
+        // get the quality field out of this record
+        var qualityData = record.get('quality');
+        chart.store.loadData(qualityData);
     }
 
 });

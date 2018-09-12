@@ -23,7 +23,11 @@ Ext.define('CarListings.view.CarListings', {
         'Ext.grid.Panel',
         'Ext.view.Table',
         'Ext.grid.column.Column',
-        'Ext.XTemplate'
+        'Ext.XTemplate',
+        'Ext.chart.CartesianChart',
+        'Ext.chart.axis.Category',
+        'Ext.chart.axis.Numeric',
+        'Ext.chart.series.Bar'
     ],
 
     controller: 'carlistings',
@@ -83,12 +87,66 @@ Ext.define('CarListings.view.CarListings', {
         {
             xtype: 'panel',
             flex: 1,
+            margins: '5 0 0 0',
             itemId: 'detailPanel',
             tpl: [
                 '`<img src="data/{img}" style="float: right" />',
                 'Manufacturer: {manufacturer} ',
                 'Model: <a href="{wiki}" target="_blank">{model}</a><br>',
                 'Price: {price:usMoney}`'
+            ]
+        },
+        {
+            xtype: 'panel',
+            flex: 1,
+            margins: '5 0 0 0',
+            itemId: 'chartPanel',
+            layout: 'fit',
+            items: [
+                {
+                    xtype: 'cartesian',
+                    height: 250,
+                    itemId: 'qualityChart',
+                    width: 400,
+                    insetPadding: 20,
+                    store: 'CarChartStore',
+                    axes: [
+                        {
+                            type: 'category',
+                            fields: [
+                                'name'
+                            ],
+                            title: 'Quality',
+                            position: 'bottom'
+                        },
+                        {
+                            type: 'numeric',
+                            fields: [
+                                'rating'
+                            ],
+                            majorTickSteps: 4,
+                            maximum: 5,
+                            minimum: 0,
+                            position: 'left',
+                            title: 'Score'
+                        }
+                    ],
+                    series: [
+                        {
+                            type: 'bar',
+                            label: {
+                                display: 'insideEnd',
+                                field: 'rating',
+                                color: '#333',
+                                'text-anchor': 'middle'
+                            },
+                            xField: 'name',
+                            yField: [
+                                'rating'
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     ]

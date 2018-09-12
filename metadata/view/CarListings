@@ -185,7 +185,15 @@
                             " var detailPanel = Ext.ComponentQuery.query('#detailPanel')[0];",
                             " // update the detailPanel with data",
                             " // this will trigger the tpl to become updates",
-                            " detailPanel.update(record.data);"
+                            " detailPanel.update(record.data);",
+                            "",
+                            " // grab a reference to the qualityChart, notice we use down here instead of child",
+                            " // because down will go down the container hierarchy at any depth and child",
+                            " // only retrieves direct children",
+                            " var chart = Ext.ComponentQuery.query('#qualityChart')[0];",
+                            " // get the quality field out of this record",
+                            " var qualityData = record.get('quality');",
+                            " chart.store.loadData(qualityData);"
                         ],
                         "name": "select",
                         "scope": "me"
@@ -210,11 +218,13 @@
             "codeClass": null,
             "userConfig": {
                 "itemId": "detailPanel",
-                "layout|flex": 1
+                "layout|flex": 1,
+                "layout|margins": "5 0 0 0"
             },
             "configAlternates": {
                 "itemId": "string",
-                "layout|flex": "number"
+                "layout|flex": "number",
+                "layout|margins": "string"
             },
             "name": "MyPanel",
             "designerId": "016693b2-a284-4d0d-aaa1-5c6cd3d3128b",
@@ -241,6 +251,142 @@
                     },
                     "name": "tpl",
                     "designerId": "d77c98d7-9ec3-477f-b039-3a929089d6c9"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "chartPanel",
+                "layout": "fit",
+                "layout|flex": 1,
+                "layout|margins": "5 0 0 0"
+            },
+            "configAlternates": {
+                "itemId": "string",
+                "layout": "string",
+                "layout|flex": "number",
+                "layout|margins": "string"
+            },
+            "name": "MyPanel1",
+            "designerId": "13f3fdaa-ee84-431d-baf3-53726317d0dc",
+            "cn": [
+                {
+                    "type": "Ext.chart.CartesianChart",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 250,
+                        "insetPadding": [
+                            "20"
+                        ],
+                        "itemId": "qualityChart",
+                        "store": "CarChartStore",
+                        "width": 400
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "insetPadding": "object",
+                        "itemId": "string",
+                        "store": "store",
+                        "width": "auto"
+                    },
+                    "name": "ColumnChart",
+                    "designerId": "b09ba48d-7767-4a5e-bb1e-319d81d2af2f",
+                    "isBuiltIn": true,
+                    "iconCls": "icon-column-chart",
+                    "autoName": "ColumnChart",
+                    "cn": [
+                        {
+                            "type": "Ext.chart.axis.Category",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "name"
+                                ],
+                                "title": [
+                                    "Quality"
+                                ]
+                            },
+                            "configAlternates": {
+                                "fields": "typedarray",
+                                "title": "object"
+                            },
+                            "name": "MyCategoryAxis",
+                            "designerId": "c9f814d4-f3c8-44fa-84bf-1b4942744f19"
+                        },
+                        {
+                            "type": "Ext.chart.axis.Numeric",
+                            "reference": {
+                                "name": "axes",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fields": [
+                                    "rating"
+                                ],
+                                "majorTickSteps": 4,
+                                "maximum": 5,
+                                "minimum": 0,
+                                "position": "left",
+                                "title": [
+                                    "Score"
+                                ]
+                            },
+                            "configAlternates": {
+                                "fields": "typedarray",
+                                "majorTickSteps": "number",
+                                "maximum": "number",
+                                "minimum": "number",
+                                "position": "string",
+                                "title": "object"
+                            },
+                            "name": "MyNumericAxis",
+                            "designerId": "e0bab03b-f784-4b4a-a6e9-b94360b9882b"
+                        },
+                        {
+                            "type": "Ext.chart.series.Bar",
+                            "reference": {
+                                "name": "series",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "label": [
+                                    "{",
+                                    "     display: 'insideEnd',",
+                                    "     field: 'rating',",
+                                    "     color: '#333',",
+                                    "     'text-anchor': 'middle'",
+                                    " }"
+                                ],
+                                "xField": "name",
+                                "yField": [
+                                    "rating"
+                                ]
+                            },
+                            "configAlternates": {
+                                "label": "object",
+                                "xField": "datafield",
+                                "yField": "typedarray"
+                            },
+                            "name": "MyBarSeries",
+                            "designerId": "e531ba72-2b42-4de8-8a2a-d41959724d24"
+                        }
+                    ]
                 }
             ]
         }
